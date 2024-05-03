@@ -1,0 +1,33 @@
+<!-- res/drawable/spinner_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape with stroke and rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#4DBFF8"
+                />
+
+            <gradient
+                android:startColor="#D5D8DD"
+                android:endColor="#4DBFF8"
+                android:angle="360"/>
+            <corners
+                android:radius="8dp" />
+
+        </shape>
+    </item>
+
+    <!-- Spinner arrow -->
+    <item android:right="8dp"
+        android:gravity="end"
+        android:top="10dp">
+        <layer-list>
+            <item
+                android:width="24dp"
+                android:height="24dp"
+                android:drawable="@drawable/ic_spinner_arrow" />
+        </layer-list>
+    </item>
+</layer-list>

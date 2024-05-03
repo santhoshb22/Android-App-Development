@@ -1,0 +1,20 @@
+<!-- notification_item.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationItemTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:textColor="@android:color/black"
+    android:layout_margin="20dp"
+    android:textSize="15sp"
+ />
+
+
+
+    </ScrollView>

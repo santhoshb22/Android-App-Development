@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">design</string>
+    <!-- Inside the <resources> section of your res/values/strings.xml file -->
+    <string-array name="skill_levels">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="years_array">
+        <item>2023-2024</item>
+        <item>2024-2025</item>
+        <item>2026-2027</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+
+
+    <string name="title_activity_result">ResultActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="db_ip_address">192.168.183.201</string>
+
+    <string name="lorem_ipsum">We are looking for a Software Developer to build and implement functional programs. You will work with other Developers and Product Managers throughout the software development life cycle.
+
+In this role, you should be a team player with a keen eye for detail and problem-solving skills. If you also have experience in Agile frameworks and popular coding languages (e.g. JavaScript), we’d like to meet you.
+
+Your goal will be to build efficient programs and systems that serve user needs.
+    </string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">Login</string>
+
+</resources>

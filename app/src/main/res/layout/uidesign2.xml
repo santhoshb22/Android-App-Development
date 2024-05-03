@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="#1E71F0"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="IPT"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/appbar_bg">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/log1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="130dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    app:layout_collapseMode="parallax" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#1E71F0"
+                app:layout_collapseMode="pin" />
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/your_other_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="28dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:id="@+id/card_view0"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/imgview"
+                    android:padding="28dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_image"
+                        android:layout_gravity="start"
+                        />
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/Regno"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="160dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#1E71F0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/Prg"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="163dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#1E71F0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/Batch"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="163dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#1E71F0"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Details"
+                android:layout_marginTop="20dp"
+                android:textColor="#1E71F0"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/Heading"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="10th Mark: "
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="6"
+                            android:id="@+id/Mark10"
+                            android:hint="Enter Mark"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/custom_edittext"
+                            android:paddingStart="10dp"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                     android:layout_marginStart="20dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Skills Acquired:"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"/>
+                        <LinearLayout
+                            android:id="@+id/existingHorizontalItems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="30dp">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="5"
+                                android:layout_height="40dp"
+                                android:background="@drawable/custom_edittext"
+                                android:padding="8dp"
+                                android:hint="Enter Skill"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:layout_marginBottom="10dp"
+                                android:id="@+id/skillEditText"/>
+
+                            <Spinner
+                                android:id="@+id/InitialSpinner"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginStart="20dp"
+                                android:textColorHint="@color/white"
+                                android:textColor="@color/white"
+                                android:background="@drawable/spinner_background"/>
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:id="@+id/initialButton"
+                                android:layout_height="40dp"
+                                android:text="+"
+                                android:paddingTop="1dp"
+                                android:textSize="20sp"
+                                android:background="@drawable/custom_button"
+                                android:layout_marginStart="10dp"
+                                android:textColor="#4DBFF8"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/duplicatedHorizontalItemsContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="30dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Skills Required:"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="30dp"/>
+                        <LinearLayout
+                            android:id="@+id/RequiredSkillLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="30dp">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="40dp"
+                                android:background="@drawable/custom_edittext"
+                                android:padding="8dp"
+                                android:hint="Enter Skill"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:id="@+id/ReqSkill"/>
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:id="@+id/addButton2"
+                                android:layout_height="40dp"
+                                android:text="+"
+                                android:paddingTop="1dp"
+                                android:textSize="20sp"
+                                android:background="@drawable/custom_button"
+                                android:layout_marginStart="10dp"
+                                android:textColor="#4DBFF8"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/duplicatedRequiredSkillsContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="30dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="30dp"
+                        android:padding="20dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Focus: "
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/placementCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Placement"/>
+
+                        <CheckBox
+                            android:id="@+id/higherStudiesCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Higher Studies"/>
+
+                        <CheckBox
+                            android:id="@+id/entrepreneurCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Entrepreneur"/>
+
+
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:id="@+id/SubmitBtn"
+                android:layout_height="50dp"
+                android:text="Submit"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custum_submit"
+                android:backgroundTint="#1E71F0"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

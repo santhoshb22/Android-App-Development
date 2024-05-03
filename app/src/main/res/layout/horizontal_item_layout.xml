@@ -1,0 +1,42 @@
+<!-- res/layout/horizontal_item_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/existingHorizontalItems"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="30dp">
+
+<EditText
+    android:layout_width="0dp"
+    android:layout_weight="5"
+    android:layout_height="40dp"
+    android:background="@drawable/custom_edittext"
+    android:padding="8dp"
+    android:hint="Enter Skill"
+    android:textColor="@color/black"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/skillEditText"/>
+
+<Spinner
+    android:id="@+id/YourSpinner"
+    android:layout_width="0dp"
+    android:layout_weight="4"
+    android:layout_height="40dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginStart="20dp"
+    android:background="@drawable/spinner_background"/>
+
+<Button
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:id="@+id/addButton"
+    android:layout_height="40dp"
+    android:text="+"
+    android:paddingTop="1dp"
+    android:textSize="20sp"
+    android:background="@drawable/custom_button"
+    android:layout_marginStart="10dp"
+    android:textColor="#6363e7"/>
+</LinearLayout>

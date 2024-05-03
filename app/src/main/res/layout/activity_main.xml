@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+           >
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:contentScrim="#1E71F0"
+                    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                    app:title="IPT"
+                    app:collapsedTitleTextColor="@color/white"
+                    app:expandedTitleTextColor="@color/white"
+                    >
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:paddingHorizontal="20dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/appbar_bg">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/log1"
+                                    android:scaleType="centerCrop"
+                                    android:layout_marginStart="130dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="15dp"
+                                    app:layout_collapseMode="parallax" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="#1E71F0"
+                            app:layout_collapseMode="pin" />
+
+
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/your_other_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/Name"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="35dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#1E71F0"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="28dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="40dp"
+                            android:id="@+id/card_view0"
+                            >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:id="@+id/imgview"
+                                    android:padding="28dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/profile_image"
+                                            android:layout_gravity="start"
+                                            />
+
+
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:id="@+id/Regno"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="130dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:textColor="#1E71F0"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:id="@+id/Prg"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_marginStart="130dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:textColor="#1E71F0"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:id="@+id/Batch"
+                                    android:layout_marginTop="70dp"
+                                    android:layout_marginStart="130dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:textColor="#1E71F0"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="In plant Training-Student Request Form"
+                            android:layout_marginStart="20dp"
+                            android:textColor="#1E71F0"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/Heading"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Academic Year "
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    />
+                                <Spinner
+                                    android:id="@+id/yearSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="6"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/spinner_background"
+                                    android:drawablePadding="8dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name of the Company "
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    />
+                                <Spinner
+                                    android:id="@+id/cname"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="4"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="40dp"
+                                    android:background="@drawable/spinner_background"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp"
+                            android:padding="20dp">
+
+
+
+                                <LinearLayout
+                                    android:id="@+id/period"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Training Peroid: "
+                                            android:textSize="20sp"
+                                            android:textColor="@color/black"
+                                            />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textSize="20sp"
+                                            android:id="@+id/date"
+                                            android:textColor="@color/black"
+                                            />
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/fromto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="From:"
+                                            android:textSize="20sp"
+                                            android:textColor="@color/black"
+                                            android:layout_marginStart="4dp"
+                                            />
+
+                                        <EditText
+                                            android:id="@+id/txtstartDate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_marginStart="10dp"
+                                            android:hint="Select Date"
+                                            android:clickable="true"
+                                            android:focusable="false"
+                                            android:layout_marginEnd="40dp"
+                                            android:layout_marginTop="10dp"
+                                            android:paddingStart="10dp"
+                                            android:background="@drawable/custom_edittext"/>
+
+                                        <DatePicker
+                                            android:id="@+id/startdatePicker"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:visibility="gone"
+                                            android:layout_below="@id/txtstartDate"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="To:"
+                                            android:textSize="20sp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginStart="4dp"
+                                            android:textColor="@color/black"
+                                            />
+                                        <EditText
+                                            android:id="@+id/txtlastDate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="40dp"
+                                            android:hint="Select Date"
+                                            android:clickable="true"
+                                            android:focusable="false"
+                                            android:paddingStart="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/custom_edittext"/>
+
+                                        <DatePicker
+                                            android:id="@+id/lastdatePicker"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:visibility="gone"
+                                            android:layout_below="@id/txtlastDate"/>
+
+
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+                        <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                            android:id="@+id/SubmitBtn"
+                            android:layout_height="50dp"
+                            android:text="Submit"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custum_submit"
+                            android:backgroundTint="#1E71F0"
+                            android:textColor="#1E71F0"/>
+                </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

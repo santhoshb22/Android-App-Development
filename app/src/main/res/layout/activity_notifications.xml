@@ -1,0 +1,25 @@
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/notificationContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".NotificationActivity">
+
+<!-- Add Toolbar for app bar -->
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/sky_blue"
+    app:titleTextColor="@android:color/white"
+    app:title="Notifications"
+  />
+
+<!-- Your other views -->
+
+</LinearLayout>
